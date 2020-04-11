@@ -1,13 +1,15 @@
 {
 	"name": "aligenie-qcoding",
-	"displayName": "aligenie-qcoding",
+	"displayName": "风之旅-qcoding",
 	"description": "this is a project code utils of aligenie",
 	"version": "0.0.1",
+	"icon": "images/icon.png",
+	"publisher": "taojiangcb",
 	"engines": {
 		"vscode": "^1.43.0"
 	},
 	"categories": [
-		"Other"
+		"tool"
 	],
 	"activationEvents": [
 		"onCommand:aigenie-qcoding.helloWorld"
