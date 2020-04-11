@@ -4,14 +4,14 @@
 
 
 #### 编辑Constants变量文件
-![baseImagesUrl](images/constants.gif)
+![image](https://s1.ax1x.com/2020/04/11/GqeJA0.gif)
 
 命令 | 快捷提示 | 说明 | 可选使用
 --|--|--|--
 CC3|CC3|导入3条Constants模版|是
 
 #### 编辑Actions文件
-![baseImagesUrl](images/actions.gif)
+![image](https://s1.ax1x.com/2020/04/11/GqZztK.gif)
 
 命令 | 快捷提示 | 说明 | 可选使用
 --|--|--|--
@@ -19,7 +19,7 @@ cuzCreateAction | cuz | 导入{createAction}|是
 CA3|CA3|导入3条Actions模版|是
 
 #### 编辑Reducers
-![baseImagesUrl](images/reducers.gif)
+![image](https://s1.ax1x.com/2020/04/11/GqeYNV.md.gif)
 
 命令 | 快捷提示 | 说明 | 可选使用
 --|--|--|--
@@ -27,7 +27,7 @@ initReducers | init | 初始化reducers文件模版|是
 addReducerFun|add|在reducer内加入一个actions处理|是
 
 #### 编辑Sagas
-![baseImagesUrl](images/sagas.gif)
+![image](https://s1.ax1x.com/2020/04/11/GqeWge.md.gif)
 
 命令 | 快捷提示 | 说明 | 可选使用
 --|--|--|--
