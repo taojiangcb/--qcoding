@@ -11,7 +11,7 @@
 CC3|CC3|导入3条Constants模版|是
 
 #### 编辑Actions文件
-![image](images/创建Actions.gif)
+![image](./images/创建Actions.gif)
 
 命令 | 快捷提示 | 说明 | 可选使用
 --|--|--|--
@@ -19,7 +19,7 @@ cuzCreateAction | cuz | 导入{createAction}|是
 CA3|CA3|导入3条Actions模版|是
 
 #### 编辑Reducers
-![image](images/创建reducers.gif)
+![image](./images/创建reducers.gif)
 
 命令 | 快捷提示 | 说明 | 可选使用
 --|--|--|--
@@ -27,7 +27,7 @@ initReducers | init | 初始化reducers文件模版|是
 addReducerFun|add|在reducer内加入一个actions处理|是
 
 #### 编辑Sagas
-![image](images/创建sagas.gif)
+![image](./images/创建sagas.gif)
 
 命令 | 快捷提示 | 说明 | 可选使用
 --|--|--|--
@@ -39,9 +39,8 @@ sagaGet|saga|导入saga的post 使用方法
 
 # Feature
 1. 先人工再智能，后续考虑根据 constants.js 自动生成 actions.js reducer.js 和 sagas.js 初始化文件。
-
 2. 组件的 props & state 模版
 
 # 联系
- 钉钉u1c4my7
- 工号:WB706470
+ - 钉钉 : u1c4my7
+ - 邮件 : jiangtao_qepyou@163.com
