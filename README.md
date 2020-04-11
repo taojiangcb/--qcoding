@@ -1,65 +1,47 @@
-# aigenie-help README
+# 分之旅-qcoding 
 
-This is the README for your extension "aigenie-help". After writing up a brief description, we recommend including the following sections.
+在某些项目规范上提高代码编写效率，比复制粘贴快点的就是自动生成,合理的使用[tab]按键跳转填空。
 
-## Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+#### 编辑Constants变量文件
+![image](images/创建Constants.gif)
 
-For example if there is an image subfolder under your extension project workspace:
+命令 | 快捷提示 | 说明 | 可选使用
+--|--|--|--
+CC3|CC3|导入3条Constants模版|是
 
-\!\[feature X\]\(images/feature-x.png\)
+#### 编辑Actions文件
+![image](images/创建Actions.gif)
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+命令 | 快捷提示 | 说明 | 可选使用
+--|--|--|--
+cuzCreateAction | cuz | 导入{createAction}|是
+CA3|CA3|导入3条Actions模版|是
 
-## Requirements
+#### 编辑Reducers
+![image](images/创建reducers.gif)
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+命令 | 快捷提示 | 说明 | 可选使用
+--|--|--|--
+initReducers | init | 初始化reducers文件模版|是
+addReducerFun|add|在reducer内加入一个actions处理|是
 
-## Extension Settings
+#### 编辑Sagas
+![image](images/创建sagas.gif)
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+命令 | 快捷提示 | 说明 | 可选使用
+--|--|--|--
+importConstants|import|导入constants文件｜是
+importActions|import|导入actions文件|是
+importSagas|import|导入sagas的基本方法|是
+sagaPost|saga|导入saga的post 使用方法|是
+sagaGet|saga|导入saga的post 使用方法
 
-For example:
+# Feature
+1. 先人工再智能，后续考虑根据 constants.js 自动生成 actions.js reducer.js 和 sagas.js 初始化文件。
 
-This extension contributes the following settings:
+2. 组件的 props & state 模版
 
-* `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
-
-## Known Issues
-
-Calling out known issues can help limit users opening duplicate issues against your extension.
-
-## Release Notes
-
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
------------------------------------------------------------------------------------------------------------
-
-## Working with Markdown
-
-**Note:** You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+CMD+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux) or `Cmd+Space` (macOS) to see a list of Markdown snippets
-
-### For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+# 联系
+ 钉钉u1c4my7
+ 工号:WB706470

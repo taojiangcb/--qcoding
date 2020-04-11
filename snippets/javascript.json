@@ -1,81 +1,107 @@
 {
-  "IMPORT CONSTANT":{
-    "prefix":"IC",
+  "import Constants":{
+    "prefix":"importConstants",
     "body":[
-      "import * as $1 from '$0';"
+      "import * as $1Constants from './constants$2';$0"
     ],
-    "description":"导入常量Constants"
+    "description":"导入常量Constants文件"
   },
 
-  "IMPORT createReducer":{
-    "prefix":"ICR",
+  "import actions":{
+    "prefix":"importActions",
+    "body":[
+      "import * as $1actions from './actions$2';$0"
+    ],
+    "description":"导入常量Actions文件"
+  },
+  "import sagas":{
+    "prefix":"importSagas",
+    "body":[
+      "import { put, call,takeLatest } from 'redux-saga/effects';"
+    ],
+    "description":"导入sagas"
+  },
+  
+  "import createReducer":{
+    "prefix":"cuzCreateReducer",
     "body":[
       "import { createReducer } from 'cuz'"
     ],
-    "description":"CUZ"
+    "description":"导入cuz的createReducer"
+  },
+
+  "import createAction":{
+    "prefix":"cuzCreateAction",
+    "body":[
+      "import { createAction } from 'cuz'"
+    ],
+    "description":"导入cuz的createAction"
   },
  
-  "CREATE CONSTANTS": {
+  "create constants": {
     "prefix": "CC3",
     "body":[
       "export const $1 = '🌎 $0'",
       "export const $1_SUCCESS = '☘️ $0'",
       "export const $1_ERROR = '❌ $0'"
     ],
-    "description":"constant常量模版"
+    "description":"constant 常量模版"
   },
 
-  "CREATE ACTIONS": {
+  "create actions": {
     "prefix": "CA3",
     "body":[
-      "export const $1 = createAction($2)",
-      "export const $1Success = createAction($3)",
-      "export const $1Error = createAction($0)"
+      "export const $1 = createAction($2)$0",
+      "export const $1Success = createAction($2_SUCCESS)$0",
+      "export const $1Error = createAction($2_ERROR)$0"
     ],
-    "description":"constant常量模版"
+    "description":"actions 常量模版"
   },
 
-  "CREATE_REDUCNER":{
-    "prefix": "CRD",
+  "init reducers":{
+    "prefix": "initReducers",
     "body":[
       "import { createReducer } from 'cuz';",
       "import { fromJS } from 'immutable';",
-      "import * as $1 from '$2';",
+      "import * as $1Constants from './constants$2';",
 
       "const initState = fromJS({",
       " $3",
       "});",
 
       "export default createReducer(initState, {",
-      " $4",
-      "}"
+      " $0",
+      "})"
     ],
     "description":"创建一个REDUCER"
   },
 
-  "ADD REDUCER FUNCTION": {
-    "prefix": "ARD",
+  "add reducer function": {
+    "prefix": "addReducerFun",
     "body":[
       "[$1](state, action) {",
-      " $0",
-      "},"
+      " $2",
+      "},",
+      "$0"
     ],
-    "description":"添加一个Reducer方法"
+    "description":"在Reducer里添加一个处理方法"
   },
 
-  "CREATE_SAGA_POST":{
-    "prefix":"SAF_POST",
+  "add saga post function":{
+    "prefix":"sagaPost",
     "body":[
       "export function* $1() {",
       " yield takeLatest($2, function* (action) {",
-      "   const res = yield call(request.post, $3, $4);",
+      "   const res = yield call(request.post, $3, {data: action.payload, credentials: 'include' $4});",
       "   //成功",
       "   if (!res.err) {",
       "     $5",
+      "     yield put(actions.$1Success(res.data.retValue))",
       "   }",
       "   //异常",
       "   else {",
-      "     $6",
+      "     $0",
+      "     yield put(actions.$1Error(res.err))",
       "   }",
       " });",
       "}"
@@ -83,19 +109,21 @@
     "description":"创建一个sagas post function"
   },
 
-  "CREATE_SAGA_GET":{
-    "prefix":"SAF_GET",
+  "add saga get function":{
+    "prefix":"sagaGet",
     "body":[
       "export function* $1() {",
       " yield takeLatest($2, function* (action) {",
-      "   const res = yield call(request.get, $3, $4);",
+      "   const res = yield call(request.get, $3, {credentials: 'include'$4});",
       "   //成功",
       "   if (!res.err) {",
       "     $5",
+      "     yield put(actions.$1Success(res.data.retValue))",
       "   }",
       "   //异常",
       "   else {",
-      "     $6",
+      "     $0",
+      "     yield put(actions.$1Error(res.err))",
       "   }",
       " });",
       "}"
