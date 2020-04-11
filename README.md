@@ -35,7 +35,7 @@ importConstants|import|导入constants文件｜是
 importActions|import|导入actions文件|是
 importSagas|import|导入sagas的基本方法|是
 sagaPost|saga|导入saga的post 使用方法|是
-sagaGet|saga|导入saga的post 使用方法
+sagaGet|saga|导入saga的get 使用方法｜是
 
 # Feature
 1. 先人工再智能，后续考虑根据 constants.js 自动生成 actions.js reducer.js 和 sagas.js 初始化文件。
