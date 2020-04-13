@@ -1,9 +1,8 @@
 {
-	"name": "aligenie-qcoding",
+	"name": "quick-coding",
 	"displayName": "风之旅-qcoding",
-	"description": "this is a project code utils of aligenie",
-	"version": "0.0.2",
-	"icon": "images/icon.png",
+	"description": "一个辅助业务项目的开发的插件",
+	"version": "0.0.4",
 	"publisher": "taojiangcb",
 	"engines": {
 		"vscode": "^1.43.0"
